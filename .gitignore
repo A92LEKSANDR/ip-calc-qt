@@ -1,0 +1,33 @@
+# Ignore build files
+/build/
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Ignore Qt Creator specific files
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+*.cproject
+*.depend
+*.layout
+*.project
+*.csettings
+*.autosave
+
+# Ignore other unnecessary files
+.DS_Store
+
