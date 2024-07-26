@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d74749b6922c8eec214f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ip-calc-qt-window",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ip-calc-qt-window::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip-calc-qt-window-Debug-7df0c1544eb4c784ba6e.json",
+					"name" : "ip-calc-qt-window",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ip-calc-qt-window_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip-calc-qt-window_autogen-Debug-70ca51453defafa81d7e.json",
+					"name" : "ip-calc-qt-window_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ip-calc-qt-window_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip-calc-qt-window_autogen_timestamp_deps-Debug-45737def7cd006c6ee69.json",
+					"name" : "ip-calc-qt-window_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/Desktop-Debug",
+		"source" : "/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

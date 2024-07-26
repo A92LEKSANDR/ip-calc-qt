@@ -1,0 +1,9 @@
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/ip-calc-qt-window.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/edit_cache.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/rebuild_cache.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/list_install_components.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/install.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/install/local.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/install/strip.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/ip-calc-qt-window_autogen_timestamp_deps.dir
+/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/CMakeFiles/ip-calc-qt-window_autogen.dir
