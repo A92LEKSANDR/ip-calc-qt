@@ -1,0 +1,16 @@
+# ninja log v6
+1	191	1721984447463317377	ip-calc-qt-window_autogen/timestamp	17c8e80b89d89f59
+1	191	1721984447463317377	/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/Desktop-Debug/ip-calc-qt-window_autogen/mocs_compilation.cpp	17c8e80b89d89f59
+192	1140	1721984447469984043	CMakeFiles/ip-calc-qt-window.dir/ip-calc-qt-window_autogen/mocs_compilation.cpp.o	13a469e663bb78af
+1	191	1721984447463317377	ip-calc-qt-window_autogen/mocs_compilation.cpp	17c8e80b89d89f59
+1	191	1721984447463317377	/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/Desktop-Debug/ip-calc-qt-window_autogen/timestamp	17c8e80b89d89f59
+192	1168	1721984447469984043	CMakeFiles/ip-calc-qt-window.dir/main.cpp.o	c9678d37bd1670cf
+192	1185	1721984447469984043	CMakeFiles/ip-calc-qt-window.dir/mainwindow.cpp.o	606faac91ac3038a
+1185	1344	1721984448463317352	ip-calc-qt-window	db6551abd1a4bf12
+3	25	1721986019679945757	ip-calc-qt-window_autogen/timestamp	17c8e80b89d89f59
+3	25	1721986019679945757	ip-calc-qt-window_autogen/mocs_compilation.cpp	17c8e80b89d89f59
+3	25	1721986019679945757	/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/Desktop-Debug/ip-calc-qt-window_autogen/timestamp	17c8e80b89d89f59
+3	25	1721986019679945757	/home/kaa/cpp/git/PET/ip-calc-qt/ip-calc-qt-window/build/Desktop-Debug/ip-calc-qt-window_autogen/mocs_compilation.cpp	17c8e80b89d89f59
+26	1002	1721986019703279091	CMakeFiles/ip-calc-qt-window.dir/main.cpp.o	c9678d37bd1670cf
+26	1023	1721986019703279091	CMakeFiles/ip-calc-qt-window.dir/mainwindow.cpp.o	606faac91ac3038a
+1023	1181	1721986020699945733	ip-calc-qt-window	db6551abd1a4bf12
