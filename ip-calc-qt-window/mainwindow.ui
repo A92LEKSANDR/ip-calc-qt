@@ -6,28 +6,44 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>513</width>
-    <height>250</height>
+    <width>300</width>
+    <height>200</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Start">
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>170</y>
-      <width>121</width>
-      <height>31</height>
+      <y>130</y>
+      <width>80</width>
+      <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Start</string>
+     <string>start IP</string>
     </property>
-    <property name="icon">
-     <iconset theme="QIcon::ThemeIcon::DocumentSend"/>
+   </widget>
+   <widget class="QPushButton" name="Reset">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>130</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>reset IP</string>
     </property>
    </widget>
   </widget>
@@ -36,7 +52,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>513</width>
+     <width>300</width>
      <height>22</height>
     </rect>
    </property>
