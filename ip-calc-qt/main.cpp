@@ -1,14 +1,11 @@
-// #include "mainwindow.h"
-#include "ipcalculator.h"
+#include "mainwindow.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    // MainWindow w;
-    // w.show();
-    IPCalculator ipcalc;
-    ipcalc.show();
+    MainWindow w;
+    w.show();
 
     return a.exec();
 }
