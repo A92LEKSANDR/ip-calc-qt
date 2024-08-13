@@ -48,3 +48,9 @@
 24	220	1723572409866497785	CMakeFiles/ip-calc-qt.dir/IPCalc.cpp.o	6fbbc6fdda3f5350
 24	1108	1723572409866497785	CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o	5610afa4c921d6f2
 1108	1269	1723572410949831093	ip-calc-qt	bc356ab54acbf145
+2	28	1723572641096492132	ip-calc-qt_autogen/timestamp	21c42fc86665def9
+2	28	1723572641096492132	ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+2	28	1723572641096492132	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/timestamp	21c42fc86665def9
+2	28	1723572641096492132	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+28	214	1723572641123158797	CMakeFiles/ip-calc-qt.dir/IPCalc.cpp.o	6fbbc6fdda3f5350
+28	1073	1723572641123158797	CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o	5610afa4c921d6f2
