@@ -1,11 +1,15 @@
-#include "IPCalcForm.h"
-
 #include <QApplication>
+#include "IPCalcForm.h"
+#include "IPCalc.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    IPCalcForm w;
-    w.show();
+
+    IPCalculator calculator;
+    IPCalcForm form;
+    form.setCalculator(&calculator);
+
+    form.show();
     return a.exec();
 }

@@ -73,6 +73,14 @@ build CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o: CXX_COMPILER__ip-calc-qt_unsca
   OBJECT_DIR = CMakeFiles/ip-calc-qt.dir
   OBJECT_FILE_DIR = CMakeFiles/ip-calc-qt.dir
 
+build CMakeFiles/ip-calc-qt.dir/IPCalc.cpp.o: CXX_COMPILER__ip-calc-qt_unscanned_Debug /home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/IPCalc.cpp || cmake_object_order_depends_target_ip-calc-qt
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/ip-calc-qt.dir/IPCalc.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -mno-direct-extern-access
+  INCLUDES = -I/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = CMakeFiles/ip-calc-qt.dir
+  OBJECT_FILE_DIR = CMakeFiles/ip-calc-qt.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ip-calc-qt
@@ -81,7 +89,7 @@ build CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o: CXX_COMPILER__ip-calc-qt_unsca
 #############################################
 # Link the executable ip-calc-qt
 
-build ip-calc-qt: CXX_EXECUTABLE_LINKER__ip-calc-qt_Debug CMakeFiles/ip-calc-qt.dir/ip-calc-qt_autogen/mocs_compilation.cpp.o CMakeFiles/ip-calc-qt.dir/main.cpp.o CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o | /usr/lib/libQt6Widgets.so.6.7.2 /usr/lib/libQt6Gui.so.6.7.2 /usr/lib/libQt6Core.so.6.7.2 /usr/lib/libGLX.so /usr/lib/libOpenGL.so || ip-calc-qt_autogen ip-calc-qt_autogen_timestamp_deps
+build ip-calc-qt: CXX_EXECUTABLE_LINKER__ip-calc-qt_Debug CMakeFiles/ip-calc-qt.dir/ip-calc-qt_autogen/mocs_compilation.cpp.o CMakeFiles/ip-calc-qt.dir/main.cpp.o CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o CMakeFiles/ip-calc-qt.dir/IPCalc.cpp.o | /usr/lib/libQt6Widgets.so.6.7.2 /usr/lib/libQt6Gui.so.6.7.2 /usr/lib/libQt6Core.so.6.7.2 /usr/lib/libGLX.so /usr/lib/libOpenGL.so || ip-calc-qt_autogen ip-calc-qt_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = /usr/lib/libQt6Widgets.so.6.7.2  /usr/lib/libQt6Gui.so.6.7.2  /usr/lib/libQt6Core.so.6.7.2  /usr/lib/libGLX.so  /usr/lib/libOpenGL.so
   OBJECT_DIR = CMakeFiles/ip-calc-qt.dir

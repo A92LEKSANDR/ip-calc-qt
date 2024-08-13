@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -25,15 +26,18 @@ public:
     QWidget *centralwidget;
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
-    QPushButton *pushButton;
+    QPushButton *butStart;
     QPushButton *pushButton_2;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
-    QLineEdit *lineEdit_4;
-    QLineEdit *lineEdit_2;
-    QLineEdit *lineEdit_3;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_5;
+    QLineEdit *lineEdit4;
+    QLineEdit *lineEdit2;
+    QLineEdit *lineEdit3;
+    QLineEdit *lineEdit1;
+    QLineEdit *lineEdit5;
+    QWidget *gridLayoutWidget_3;
+    QGridLayout *gridLayout_3;
+    QLabel *LabelResult;
 
     void setupUi(QMainWindow *IPCalcForm)
     {
@@ -50,10 +54,10 @@ public:
         gridLayout = new QGridLayout(gridLayoutWidget);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton = new QPushButton(gridLayoutWidget);
-        pushButton->setObjectName("pushButton");
+        butStart = new QPushButton(gridLayoutWidget);
+        butStart->setObjectName("butStart");
 
-        gridLayout->addWidget(pushButton, 0, 0, 1, 1);
+        gridLayout->addWidget(butStart, 0, 0, 1, 1);
 
         pushButton_2 = new QPushButton(gridLayoutWidget);
         pushButton_2->setObjectName("pushButton_2");
@@ -66,30 +70,46 @@ public:
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setObjectName("gridLayout_2");
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
-        lineEdit_4 = new QLineEdit(gridLayoutWidget_2);
-        lineEdit_4->setObjectName("lineEdit_4");
+        lineEdit4 = new QLineEdit(gridLayoutWidget_2);
+        lineEdit4->setObjectName("lineEdit4");
+        lineEdit4->setMaxLength(3);
 
-        gridLayout_2->addWidget(lineEdit_4, 0, 3, 1, 1);
+        gridLayout_2->addWidget(lineEdit4, 0, 3, 1, 1);
 
-        lineEdit_2 = new QLineEdit(gridLayoutWidget_2);
-        lineEdit_2->setObjectName("lineEdit_2");
+        lineEdit2 = new QLineEdit(gridLayoutWidget_2);
+        lineEdit2->setObjectName("lineEdit2");
+        lineEdit2->setMaxLength(3);
 
-        gridLayout_2->addWidget(lineEdit_2, 0, 1, 1, 1);
+        gridLayout_2->addWidget(lineEdit2, 0, 1, 1, 1);
 
-        lineEdit_3 = new QLineEdit(gridLayoutWidget_2);
-        lineEdit_3->setObjectName("lineEdit_3");
+        lineEdit3 = new QLineEdit(gridLayoutWidget_2);
+        lineEdit3->setObjectName("lineEdit3");
+        lineEdit3->setMaxLength(3);
 
-        gridLayout_2->addWidget(lineEdit_3, 0, 2, 1, 1);
+        gridLayout_2->addWidget(lineEdit3, 0, 2, 1, 1);
 
-        lineEdit = new QLineEdit(gridLayoutWidget_2);
-        lineEdit->setObjectName("lineEdit");
+        lineEdit1 = new QLineEdit(gridLayoutWidget_2);
+        lineEdit1->setObjectName("lineEdit1");
+        lineEdit1->setMaxLength(3);
 
-        gridLayout_2->addWidget(lineEdit, 0, 0, 1, 1);
+        gridLayout_2->addWidget(lineEdit1, 0, 0, 1, 1);
 
-        lineEdit_5 = new QLineEdit(gridLayoutWidget_2);
-        lineEdit_5->setObjectName("lineEdit_5");
+        lineEdit5 = new QLineEdit(gridLayoutWidget_2);
+        lineEdit5->setObjectName("lineEdit5");
+        lineEdit5->setMaxLength(2);
 
-        gridLayout_2->addWidget(lineEdit_5, 0, 4, 1, 1);
+        gridLayout_2->addWidget(lineEdit5, 0, 4, 1, 1);
+
+        gridLayoutWidget_3 = new QWidget(centralwidget);
+        gridLayoutWidget_3->setObjectName("gridLayoutWidget_3");
+        gridLayoutWidget_3->setGeometry(QRect(9, 9, 381, 121));
+        gridLayout_3 = new QGridLayout(gridLayoutWidget_3);
+        gridLayout_3->setObjectName("gridLayout_3");
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        LabelResult = new QLabel(gridLayoutWidget_3);
+        LabelResult->setObjectName("LabelResult");
+
+        gridLayout_3->addWidget(LabelResult, 0, 0, 1, 1);
 
         IPCalcForm->setCentralWidget(centralwidget);
 
@@ -101,8 +121,9 @@ public:
     void retranslateUi(QMainWindow *IPCalcForm)
     {
         IPCalcForm->setWindowTitle(QCoreApplication::translate("IPCalcForm", "IPCalcForm", nullptr));
-        pushButton->setText(QCoreApplication::translate("IPCalcForm", "Start", nullptr));
+        butStart->setText(QCoreApplication::translate("IPCalcForm", "Start", nullptr));
         pushButton_2->setText(QCoreApplication::translate("IPCalcForm", "Clear", nullptr));
+        LabelResult->setText(QString());
     } // retranslateUi
 
 };

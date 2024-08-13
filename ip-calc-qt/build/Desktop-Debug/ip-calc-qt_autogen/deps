@@ -1,5 +1,7 @@
 ip-calc-qt_autogen/timestamp: \
 	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/CMakeLists.txt \
+	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/IPCalc.cpp \
+	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/IPCalc.h \
 	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/IPCalcForm.cpp \
 	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/IPCalcForm.h \
 	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -302,6 +304,7 @@ ip-calc-qt_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qlatin1stringview.h \
 	/usr/include/qt6/QtCore/qline.h \
 	/usr/include/qt6/QtCore/qlist.h \
+	/usr/include/qt6/QtCore/qlocale.h \
 	/usr/include/qt6/QtCore/qlogging.h \
 	/usr/include/qt6/QtCore/qmalloc.h \
 	/usr/include/qt6/QtCore/qmap.h \
@@ -322,6 +325,7 @@ ip-calc-qt_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qprocessordetection.h \
 	/usr/include/qt6/QtCore/qrect.h \
 	/usr/include/qt6/QtCore/qrefcount.h \
+	/usr/include/qt6/QtCore/qregularexpression.h \
 	/usr/include/qt6/QtCore/qscopedpointer.h \
 	/usr/include/qt6/QtCore/qscopeguard.h \
 	/usr/include/qt6/QtCore/qset.h \
@@ -369,6 +373,7 @@ ip-calc-qt_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qversiontagging.h \
 	/usr/include/qt6/QtCore/qxptype_traits.h \
 	/usr/include/qt6/QtCore/qyieldcpu.h \
+	/usr/include/qt6/QtGui/QIntValidator \
 	/usr/include/qt6/QtGui/qaction.h \
 	/usr/include/qt6/QtGui/qbitmap.h \
 	/usr/include/qt6/QtGui/qbrush.h \
@@ -392,6 +397,7 @@ ip-calc-qt_autogen/timestamp: \
 	/usr/include/qt6/QtGui/qtguiexports.h \
 	/usr/include/qt6/QtGui/qtguiglobal.h \
 	/usr/include/qt6/QtGui/qtransform.h \
+	/usr/include/qt6/QtGui/qvalidator.h \
 	/usr/include/qt6/QtGui/qwindowdefs.h \
 	/usr/include/qt6/QtWidgets/QMainWindow \
 	/usr/include/qt6/QtWidgets/qmainwindow.h \
