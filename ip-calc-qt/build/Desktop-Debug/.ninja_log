@@ -1,0 +1,25 @@
+# ninja log v6
+1	194	1723543036119920637	ip-calc-qt_autogen/timestamp	21c42fc86665def9
+1	194	1723543036119920637	ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+1	194	1723543036119920637	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/timestamp	21c42fc86665def9
+1	194	1723543036119920637	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+194	1093	1723543036126587303	CMakeFiles/ip-calc-qt.dir/ip-calc-qt_autogen/mocs_compilation.cpp.o	b3818760cd56feff
+195	1124	1723543036126587303	CMakeFiles/ip-calc-qt.dir/main.cpp.o	caaef04595278ee4
+3	35	1723543072683253082	ip-calc-qt_autogen/timestamp	21c42fc86665def9
+3	35	1723543072683253082	ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+3	35	1723543072683253082	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/timestamp	21c42fc86665def9
+3	35	1723543072683253082	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+35	928	1723543072713253081	CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o	5610afa4c921d6f2
+928	1087	1723543073606586393	ip-calc-qt	f1bc025b2031a4b4
+2	27	1723543118273251944	ip-calc-qt_autogen/timestamp	21c42fc86665def9
+2	27	1723543118273251944	ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+2	27	1723543118273251944	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/timestamp	21c42fc86665def9
+2	27	1723543118273251944	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+27	942	1723543118299918611	CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o	5610afa4c921d6f2
+943	1093	1723543119213251923	ip-calc-qt	f1bc025b2031a4b4
+3	45	1723543197796583330	ip-calc-qt_autogen/timestamp	21c42fc86665def9
+3	45	1723543197796583330	ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+3	45	1723543197796583330	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/timestamp	21c42fc86665def9
+3	45	1723543197796583330	/home/kaa/cpp/git/ip-calc-qt/ip-calc-qt/build/Desktop-Debug/ip-calc-qt_autogen/mocs_compilation.cpp	21c42fc86665def9
+46	1023	1723543197839916663	CMakeFiles/ip-calc-qt.dir/IPCalcForm.cpp.o	5610afa4c921d6f2
+1023	1175	1723543198816583306	ip-calc-qt	f1bc025b2031a4b4
