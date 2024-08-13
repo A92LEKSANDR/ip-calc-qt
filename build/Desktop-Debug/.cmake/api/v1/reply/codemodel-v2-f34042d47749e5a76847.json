@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-6211745bdce63d21b0c2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ip-calc",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ip-calc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip-calc-Debug-144c308ab7a67168f50b.json",
+					"name" : "ip-calc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ip-calc_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip-calc_autogen-Debug-da1aabf671d6fded45d7.json",
+					"name" : "ip-calc_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ip-calc_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ip-calc_autogen_timestamp_deps-Debug-5d32dd2d191e8644c71a.json",
+					"name" : "ip-calc_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug",
+		"source" : "/home/kaa/cpp/git/PET/ip-calc"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

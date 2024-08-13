@@ -1,0 +1,9 @@
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/ip-calc.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/install.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/ip-calc_autogen_timestamp_deps.dir
+/home/kaa/cpp/git/PET/ip-calc/build/Desktop-Debug/CMakeFiles/ip-calc_autogen.dir
