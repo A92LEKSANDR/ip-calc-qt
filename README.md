@@ -1,6 +1,6 @@
 # ip-calc-qt
 <p align="center">
-  <img src="ipcalc.png" alt="Логотип ip-calc" width="200"/>
+  <img src="ipcalc.png" alt="Логотип ip-calc" width=max/>
 </p>
 ## Описание
 
