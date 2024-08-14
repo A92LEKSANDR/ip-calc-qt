@@ -25,6 +25,7 @@ public:
     ~IPCalcForm();
 
 private slots:
+    void clearFields();
     void on_calculateButton_clicked();  // Слот для обработки нажатия кнопки
 
 private:

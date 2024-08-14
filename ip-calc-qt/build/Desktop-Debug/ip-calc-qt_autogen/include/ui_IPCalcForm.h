@@ -27,7 +27,7 @@ public:
     QWidget *gridLayoutWidget;
     QGridLayout *gridLayout;
     QPushButton *butStart;
-    QPushButton *pushButton_2;
+    QPushButton *clearButton;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
     QLineEdit *lineEdit4;
@@ -59,10 +59,10 @@ public:
 
         gridLayout->addWidget(butStart, 0, 0, 1, 1);
 
-        pushButton_2 = new QPushButton(gridLayoutWidget);
-        pushButton_2->setObjectName("pushButton_2");
+        clearButton = new QPushButton(gridLayoutWidget);
+        clearButton->setObjectName("clearButton");
 
-        gridLayout->addWidget(pushButton_2, 0, 1, 1, 1);
+        gridLayout->addWidget(clearButton, 0, 1, 1, 1);
 
         gridLayoutWidget_2 = new QWidget(centralwidget);
         gridLayoutWidget_2->setObjectName("gridLayoutWidget_2");
@@ -102,12 +102,13 @@ public:
 
         gridLayoutWidget_3 = new QWidget(centralwidget);
         gridLayoutWidget_3->setObjectName("gridLayoutWidget_3");
-        gridLayoutWidget_3->setGeometry(QRect(9, 9, 381, 121));
+        gridLayoutWidget_3->setGeometry(QRect(9, 9, 381, 131));
         gridLayout_3 = new QGridLayout(gridLayoutWidget_3);
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
         LabelResult = new QLabel(gridLayoutWidget_3);
         LabelResult->setObjectName("LabelResult");
+        LabelResult->setTextFormat(Qt::TextFormat::PlainText);
 
         gridLayout_3->addWidget(LabelResult, 0, 0, 1, 1);
 
@@ -122,7 +123,7 @@ public:
     {
         IPCalcForm->setWindowTitle(QCoreApplication::translate("IPCalcForm", "IPCalcForm", nullptr));
         butStart->setText(QCoreApplication::translate("IPCalcForm", "Start", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("IPCalcForm", "Clear", nullptr));
+        clearButton->setText(QCoreApplication::translate("IPCalcForm", "Clear", nullptr));
         LabelResult->setText(QString());
     } // retranslateUi
 

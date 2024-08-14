@@ -1,8 +1,8 @@
 #include "IPCalc.h"
 
-// IPCalculator::IPCalculator() {
+IPCalculator::IPCalculator() {
 
-// }
+}
 
 void IPCalculator::setIPAddress(const std::vector<unsigned char>& ip, unsigned char prefixLength) {
     this->ip = ip;
