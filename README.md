@@ -1,5 +1,5 @@
 # ip-calc-qt
-
+![Alt ip-calc](ipcalc.png)
 ## Описание
 
 `ip-calc-qt` - проект написан на C++ с использованием Qt.
