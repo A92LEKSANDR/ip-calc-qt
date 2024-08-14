@@ -1,5 +1,7 @@
 # ip-calc-qt
-![Alt ip-calc](ipcalc.png)
+<p align="center">
+  <img src="ipcalc.png" alt="Логотип ip-calc" width="200"/>
+</p>
 ## Описание
 
 `ip-calc-qt` - проект написан на C++ с использованием Qt.
