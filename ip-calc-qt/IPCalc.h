@@ -18,6 +18,7 @@ public:
     std::vector<unsigned char> calculateMaxIPAddress() const;
     std::string getSubnetClass() const;
     unsigned int calculateNumberOfHosts() const;
+    std::vector<unsigned char> scanIpAddress();
 
 private:
     std::vector<unsigned char> ip;

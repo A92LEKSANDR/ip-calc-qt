@@ -73,3 +73,9 @@ std::string IPCalculator::getSubnetClass() const {
 unsigned int IPCalculator::calculateNumberOfHosts() const {
     return (1 << (32 - prefixLength)) - 2;
 }
+
+//add function
+std::vector<unsigned char> IPCalculator::scanIpAddress(){
+
+    return {1,3};
+}
