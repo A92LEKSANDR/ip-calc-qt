@@ -19,15 +19,18 @@ IPCalcForm::IPCalcForm(QWidget *parent)
     // Соединение сигнала кнопки start
     connect(ui->butStart, &QPushButton::clicked, this, &IPCalcForm::on_calculateButton_clicked);
     // Соединение сигнала кнопки clear
-    connect(ui->clearButton,&QPushButton::clicked,this, &IPCalcForm::clearFields);
+    connect(ui->clearButton,&QPushButton::clicked, this, &IPCalcForm::clearFields);
+    //connect scan button
+    connect(ui->ScanButton,&QPushButton::clicked, this, &IPCalcForm::onGetIpButtonClicked);
 }
 
 
-void IPCalcForm::setCalculator(IPCalculator *calc) {
+void IPCalcForm::setCalculator(IPCalculator* calc) {
     calculator = calc;
 }
 
 void IPCalcForm::on_calculateButton_clicked() {
+
     QString ipPart1 = ui->lineEdit1->text();
     QString ipPart2 = ui->lineEdit2->text();
     QString ipPart3 = ui->lineEdit3->text();
@@ -83,7 +86,6 @@ void IPCalcForm::on_calculateButton_clicked() {
                                  .arg(maxIP[0]).arg(maxIP[1]).arg(maxIP[2]).arg(maxIP[3])
                                  .arg(QString::fromStdString(subnetClass))
                                  .arg(numHosts);
-        ui->LabelResult->setWordWrap(true);  // Включаем перенос слов
 
         ui->LabelResult->setText(resultText);
     } else {
@@ -106,10 +108,46 @@ void IPCalcForm::displayResults(const std::vector<int>& results) {
         for (const int &result : results) {
             resultText.append(QString::number(result) + "\n");
         }
-        ui->LabelResult->setText(resultText);  // Отображаем результаты
+        ui->LabelResult->setText(resultText);                               // Отображаем результаты
     } else {
         ui->LabelResult->setText("No results available.");
     }
+}
+
+void IPCalcForm::onGetIpButtonClicked() {
+    std::vector<unsigned char> ipAdd = calculator->getIpInPc();
+
+    calculator->setIPAddress(ipAdd, static_cast<unsigned char>(24));
+
+    // Получаем и выводим результаты
+    auto subnetMask = calculator->calculateSubnetMask();
+    auto wildcardMask = calculator->calculateWildcardMask();
+    auto networkAddress = calculator->calculateNetworkAddress();
+    auto broadcastAddress = calculator->calculateBroadcastAddress();
+    auto minIP = calculator->calculateMinIPAddress();
+    auto maxIP = calculator->calculateMaxIPAddress();
+    auto subnetClass = calculator->getSubnetClass();
+    auto numHosts = calculator->calculateNumberOfHosts();
+
+    QString resultText = QString("Subnet Mask: %1.%2.%3.%4\n"
+                                 "Wildcard Mask: %5.%6.%7.%8\n"
+                                 "Network Address: %9.%10.%11.%12\n"
+                                 "Broadcast Address: %13.%14.%15.%16\n"
+                                 "Min IP Address: %17.%18.%19.%20\n"
+                                 "Max IP Address: %21.%22.%23.%24\n"
+                                 "Subnet Class: %25\n"
+                                 "Number of Hosts: %26")
+                             .arg(subnetMask[0]).arg(subnetMask[1]).arg(subnetMask[2]).arg(subnetMask[3])
+                             .arg(wildcardMask[0]).arg(wildcardMask[1]).arg(wildcardMask[2]).arg(wildcardMask[3])
+                             .arg(networkAddress[0]).arg(networkAddress[1]).arg(networkAddress[2]).arg(networkAddress[3])
+                             .arg(broadcastAddress[0]).arg(broadcastAddress[1]).arg(broadcastAddress[2]).arg(broadcastAddress[3])
+                             .arg(minIP[0]).arg(minIP[1]).arg(minIP[2]).arg(minIP[3])
+                             .arg(maxIP[0]).arg(maxIP[1]).arg(maxIP[2]).arg(maxIP[3])
+                             .arg(QString::fromStdString(subnetClass))
+                             .arg(numHosts);
+
+    ui->LabelResult->setText(resultText);
+
 }
 
 IPCalcForm::~IPCalcForm()

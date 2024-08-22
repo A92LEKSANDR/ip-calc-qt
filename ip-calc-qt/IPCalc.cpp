@@ -1,4 +1,11 @@
 #include "IPCalc.h"
+#include <stdexcept>
+#include <cstdio>
+#include <memory>
+#include <functional>
+#include <array>
+#include <sstream>
+#include <iostream>  // Можно убрать после отладки
 
 IPCalculator::IPCalculator() {
 
@@ -78,4 +85,31 @@ unsigned int IPCalculator::calculateNumberOfHosts() const {
 std::vector<unsigned char> IPCalculator::scanIpAddress(){
 
     return {1,3};
+}
+
+
+std::vector<unsigned char> IPCalculator::getIpInPc(){
+    std::array<char,128> buffer;
+    std::string result;
+
+    std::unique_ptr<FILE, std::function<int(FILE*)>>pipe(popen("ip addr show | grep 'inet ' | grep -v '127.0.0.1' | awk '{print $2}' | cut -d/ -f1", "r"), pclose);
+
+    if (!pipe) {
+        throw std::runtime_error("popen() failed!");
+    }
+    while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
+        result += buffer.data();
+    }
+    result.erase(result.find_last_not_of(" \n\r\t")+1);
+
+    std::vector<unsigned char> ipBytes;
+
+    std::stringstream str(result);
+    std::string item;
+
+    while(std::getline(str,item,'.')){
+        ipBytes.push_back(static_cast<unsigned char>(std::stoi(item)));
+    }
+
+    return ipBytes;
 }

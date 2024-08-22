@@ -28,7 +28,7 @@ public:
     QGridLayout *gridLayout;
     QPushButton *butStart;
     QPushButton *clearButton;
-    QPushButton *pushButton;
+    QPushButton *ScanButton;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
     QLineEdit *lineEdit4;
@@ -65,10 +65,10 @@ public:
 
         gridLayout->addWidget(clearButton, 0, 2, 1, 1);
 
-        pushButton = new QPushButton(gridLayoutWidget);
-        pushButton->setObjectName("pushButton");
+        ScanButton = new QPushButton(gridLayoutWidget);
+        ScanButton->setObjectName("ScanButton");
 
-        gridLayout->addWidget(pushButton, 0, 1, 1, 1);
+        gridLayout->addWidget(ScanButton, 0, 1, 1, 1);
 
         gridLayoutWidget_2 = new QWidget(centralwidget);
         gridLayoutWidget_2->setObjectName("gridLayoutWidget_2");
@@ -130,7 +130,7 @@ public:
         IPCalcForm->setWindowTitle(QCoreApplication::translate("IPCalcForm", "IPCalcForm", nullptr));
         butStart->setText(QCoreApplication::translate("IPCalcForm", "Start", nullptr));
         clearButton->setText(QCoreApplication::translate("IPCalcForm", "Clear", nullptr));
-        pushButton->setText(QCoreApplication::translate("IPCalcForm", "Scan Lan", nullptr));
+        ScanButton->setText(QCoreApplication::translate("IPCalcForm", "Scan Lan", nullptr));
         LabelResult->setText(QString());
     } // retranslateUi
 

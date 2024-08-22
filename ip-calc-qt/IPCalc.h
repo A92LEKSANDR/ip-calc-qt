@@ -20,6 +20,7 @@ public:
     unsigned int calculateNumberOfHosts() const;
     std::vector<unsigned char> scanIpAddress();
 
+    std::vector<unsigned char> getIpInPc();
 private:
     std::vector<unsigned char> ip;
     unsigned char prefixLength;
