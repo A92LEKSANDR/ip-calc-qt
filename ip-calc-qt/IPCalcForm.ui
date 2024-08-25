@@ -53,7 +53,7 @@
      <item row="0" column="1">
       <widget class="QPushButton" name="ScanButton">
        <property name="text">
-        <string>Scan Lan</string>
+        <string>Main PC IP</string>
        </property>
       </widget>
      </item>

@@ -130,7 +130,7 @@ public:
         IPCalcForm->setWindowTitle(QCoreApplication::translate("IPCalcForm", "IPCalcForm", nullptr));
         butStart->setText(QCoreApplication::translate("IPCalcForm", "Start", nullptr));
         clearButton->setText(QCoreApplication::translate("IPCalcForm", "Clear", nullptr));
-        ScanButton->setText(QCoreApplication::translate("IPCalcForm", "Scan Lan", nullptr));
+        ScanButton->setText(QCoreApplication::translate("IPCalcForm", "Main PC IP", nullptr));
         LabelResult->setText(QString());
     } // retranslateUi
 

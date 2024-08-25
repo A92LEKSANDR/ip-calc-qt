@@ -7,7 +7,12 @@ IPCalcForm::IPCalcForm(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Установка валидаторов для полей ввода
+    //set background application
+    this->setStyleSheet("background-color: #d9edf7;");
+
+    //ui->butStart->setStyleSheet("color: #a9edf7");
+
+    // set validator on line1...4
     QIntValidator *validator = new QIntValidator(0, 255, this);
     ui->lineEdit1->setValidator(validator);
     ui->lineEdit2->setValidator(validator);
@@ -16,11 +21,11 @@ IPCalcForm::IPCalcForm(QWidget *parent)
 
     QIntValidator* validMask = new QIntValidator(0,32,this);
     ui->lineEdit5->setValidator(validMask);
-    // Соединение сигнала кнопки start
+    // connect to button start
     connect(ui->butStart, &QPushButton::clicked, this, &IPCalcForm::on_calculateButton_clicked);
-    // Соединение сигнала кнопки clear
+    // connetct to button clear
     connect(ui->clearButton,&QPushButton::clicked, this, &IPCalcForm::clearFields);
-    //connect scan button
+    //connect to button scan
     connect(ui->ScanButton,&QPushButton::clicked, this, &IPCalcForm::onGetIpButtonClicked);
 }
 
