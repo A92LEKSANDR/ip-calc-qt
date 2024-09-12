@@ -78,30 +78,35 @@ public:
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
         lineEdit4 = new QLineEdit(gridLayoutWidget_2);
         lineEdit4->setObjectName("lineEdit4");
+        lineEdit4->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         lineEdit4->setMaxLength(3);
 
         gridLayout_2->addWidget(lineEdit4, 0, 3, 1, 1);
 
         lineEdit2 = new QLineEdit(gridLayoutWidget_2);
         lineEdit2->setObjectName("lineEdit2");
+        lineEdit2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         lineEdit2->setMaxLength(3);
 
         gridLayout_2->addWidget(lineEdit2, 0, 1, 1, 1);
 
         lineEdit3 = new QLineEdit(gridLayoutWidget_2);
         lineEdit3->setObjectName("lineEdit3");
+        lineEdit3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         lineEdit3->setMaxLength(3);
 
         gridLayout_2->addWidget(lineEdit3, 0, 2, 1, 1);
 
         lineEdit1 = new QLineEdit(gridLayoutWidget_2);
         lineEdit1->setObjectName("lineEdit1");
+        lineEdit1->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         lineEdit1->setMaxLength(3);
 
         gridLayout_2->addWidget(lineEdit1, 0, 0, 1, 1);
 
         lineEdit5 = new QLineEdit(gridLayoutWidget_2);
         lineEdit5->setObjectName("lineEdit5");
+        lineEdit5->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 85, 255);"));
         lineEdit5->setMaxLength(2);
 
         gridLayout_2->addWidget(lineEdit5, 0, 4, 1, 1);
@@ -130,7 +135,7 @@ public:
         IPCalcForm->setWindowTitle(QCoreApplication::translate("IPCalcForm", "IPCalcForm", nullptr));
         butStart->setText(QCoreApplication::translate("IPCalcForm", "Start", nullptr));
         clearButton->setText(QCoreApplication::translate("IPCalcForm", "Clear", nullptr));
-        ScanButton->setText(QCoreApplication::translate("IPCalcForm", "Main PC IP", nullptr));
+        ScanButton->setText(QCoreApplication::translate("IPCalcForm", "Scan IP", nullptr));
         LabelResult->setText(QString());
     } // retranslateUi
 
