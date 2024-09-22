@@ -12,7 +12,7 @@ IPCalcForm::IPCalcForm(QWidget *parent)
 
     //ui->butStart->setStyleSheet("color: #a9edf7");
 
-    // set validator on line1...4
+    // set validator on line1...4 for ip octate
     QIntValidator *validator = new QIntValidator(0, 255, this);
     ui->lineEdit1->setValidator(validator);
     ui->lineEdit2->setValidator(validator);
@@ -21,6 +21,7 @@ IPCalcForm::IPCalcForm(QWidget *parent)
 
     QIntValidator* validMask = new QIntValidator(0,32,this);
     ui->lineEdit5->setValidator(validMask);
+
     // connect to button start
     connect(ui->butStart, &QPushButton::clicked, this, &IPCalcForm::on_calculateButton_clicked);
     // connetct to button clear
@@ -113,11 +114,11 @@ void IPCalcForm::displayResults(const std::vector<int>& results) {
         for (const int &result : results) {
             resultText.append(QString::number(result) + "\n");
         }
-        ui->LabelResult->setText(resultText);                               // Отображаем результаты
-    } else {
+        ui->LabelResult->setText(resultText);
         ui->LabelResult->setText("No results available.");
     }
 }
+
 
 void IPCalcForm::onGetIpButtonClicked() {
     std::vector<unsigned char> ipAdd = calculator->getIpInPc();
@@ -150,7 +151,7 @@ void IPCalcForm::onGetIpButtonClicked() {
                              .arg(maxIP[0]).arg(maxIP[1]).arg(maxIP[2]).arg(maxIP[3])
                              .arg(QString::fromStdString(subnetClass))
                              .arg(numHosts);
-
+    ui->LabelResult->setAlignment(Qt::AlignVCenter);
     ui->LabelResult->setText(resultText);
 
 }

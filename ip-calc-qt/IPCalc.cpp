@@ -83,11 +83,11 @@ unsigned int IPCalculator::calculateNumberOfHosts() const {
 
 //add function
 std::vector<unsigned char> IPCalculator::scanIpAddress(){
-
     return {1,3};
 }
 
 
+//get ip for Linux system
 std::vector<unsigned char> IPCalculator::getIpInPc(){
     std::array<char,128> buffer;
     std::string result;
